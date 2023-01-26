@@ -1,7 +1,7 @@
 import React from "react";
-import MacBookAirThree from "pages/MacBookAirThree";
-import MacBookAirTwo from "pages/MacBookAirTwo";
-import MacBookAirOne from "pages/MacBookAirOne";
+import Registra from "pages/Registra";
+import Ok from "pages/Ok";
+import Home1 from "pages/Home1";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "pages/Home";
 import NotFound from "pages/NotFound";
@@ -9,10 +9,10 @@ const ProjectRoutes = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<MacBookAirOne />} />
+        <Route path="/" element={<Home1 />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/macbookairtwo" element={<MacBookAirTwo />} />
-        <Route path="/macbookairthree" element={<MacBookAirThree />} />
+        <Route path="/ok" element={<Ok />} />
+        <Route path="/registra" element={<Registra />} />
         <Route path="/dhiwise-dashboard" element={<Home />} />
       </Routes>
     </Router>

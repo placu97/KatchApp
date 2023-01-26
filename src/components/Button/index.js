@@ -1,23 +1,25 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const variants = { FillIndigoA700: "bg-indigo_A700 text-black_900" };
-const sizes = { sm: "p-[14px]" };
+const shapes = { RoundedBorder40: "rounded-radius40" };
+const variants = { FillGreen500: "bg-green_500 text-white_A700" };
+const sizes = { sm: "p-[23px] sm:px-[20px]" };
 
 const Button = ({
   children,
   className = "",
   leftIcon,
   rightIcon,
+  shape,
   variant,
   size,
   ...restProps
 }) => {
   return (
     <button
-      className={`${className}  ${variants[variant] || ""} ${
-        sizes[size] || ""
-      } `}
+      className={`${className} ${shapes[shape] || ""} ${
+        variants[variant] || ""
+      } ${sizes[size] || ""} `}
       {...restProps}
     >
       {!!leftIcon && leftIcon}
@@ -30,9 +32,10 @@ const Button = ({
 Button.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
-  variant: PropTypes.oneOf(["FillIndigoA700"]),
+  shape: PropTypes.oneOf(["RoundedBorder40"]),
+  variant: PropTypes.oneOf(["FillGreen500"]),
   size: PropTypes.oneOf(["sm"]),
 };
-Button.defaultProps = { className: "", variant: "", size: "" };
+Button.defaultProps = { className: "", shape: "", variant: "", size: "" };
 
 export { Button };

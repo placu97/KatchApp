@@ -3,7 +3,7 @@ import React from "react";
 import { Text, Input, Img, Button } from "components";
 import { useNavigate } from "react-router-dom";
 
-const MacBookAirTwoPage = () => {
+const RegistraPage = () => {
   const navigate = useNavigate();
 
   return (
@@ -12,7 +12,7 @@ const MacBookAirTwoPage = () => {
         <div className="flex flex-col gap-[34px] items-center justify-start w-[100%]">
           <div className="bg-bluegray_100 flex flex-col items-center justify-start p-[26px] sm:px-[20px] w-[100%]">
             <Text
-              className="not-italic text-black_900 text-left w-[auto]"
+              className="font-normal not-italic text-black_900 text-left w-[auto]"
               as="h1"
               variant="h1"
             >
@@ -23,8 +23,8 @@ const MacBookAirTwoPage = () => {
             <div className="bg-bluegray_100 flex md:flex-col sm:flex-col flex-row md:gap-[40px] sm:gap-[40px] items-center justify-between md:ml-[0] sm:ml-[0] ml-[3px] p-[18px] w-[100%]">
               <Text
                 className="font-inter font-normal md:ml-[0] sm:ml-[0] ml-[4px] not-italic text-black_900 text-left w-[auto]"
-                as="h2"
-                variant="h2"
+                as="h3"
+                variant="h3"
               >
                 Inserisci il tuo nome{" "}
               </Text>
@@ -46,8 +46,8 @@ const MacBookAirTwoPage = () => {
             <div className="bg-bluegray_100 flex md:flex-col sm:flex-col flex-row md:gap-[40px] sm:gap-[40px] gap-[65px] items-center justify-start md:ml-[0] sm:ml-[0] ml-[3px] mt-[34px] p-[18px] w-[100%]">
               <Text
                 className="font-normal md:ml-[0] sm:ml-[0] ml-[4px] not-italic text-black_900 text-left w-[auto]"
-                as="h2"
-                variant="h2"
+                as="h3"
+                variant="h3"
               >
                 Inserisci il tuo genere{" "}
               </Text>
@@ -61,8 +61,8 @@ const MacBookAirTwoPage = () => {
                     />
                     <Text
                       className="font-medium mt-[4px] text-left text-white_A700 w-[auto]"
-                      as="h2"
-                      variant="h2"
+                      as="h3"
+                      variant="h3"
                     >
                       Femmina
                     </Text>
@@ -77,8 +77,8 @@ const MacBookAirTwoPage = () => {
                     />
                     <Text
                       className="font-medium mt-[4px] text-left text-white_A700 w-[auto]"
-                      as="h2"
-                      variant="h2"
+                      as="h3"
+                      variant="h3"
                     >
                       Maschio
                     </Text>
@@ -89,8 +89,8 @@ const MacBookAirTwoPage = () => {
             <div className="bg-bluegray_100 flex md:flex-col sm:flex-col flex-row md:gap-[40px] sm:gap-[40px] items-start justify-between mt-[34px] p-[14px] w-[100%]">
               <Text
                 className="font-normal md:ml-[0] sm:ml-[0] ml-[8px] md:mt-[0] sm:mt-[0] mt-[15px] not-italic text-black_900 text-left w-[auto]"
-                as="h2"
-                variant="h2"
+                as="h3"
+                variant="h3"
               >
                 Data di nascita
               </Text>
@@ -113,14 +113,14 @@ const MacBookAirTwoPage = () => {
             <div className="flex sm:flex-col flex-row gap-[155px] sm:gap-[40px] items-start justify-start md:ml-[0] sm:ml-[0] ml-[16px] mt-[58px] md:w-[100%] sm:w-[100%] w-[65%]">
               <Text
                 className="font-normal not-italic text-black_900 text-left w-[auto]"
-                as="h2"
-                variant="h2"
+                as="h3"
+                variant="h3"
               >
                 Foto e scheda
               </Text>
               <div
                 className="common-pointer h-[122px] sm:mt-[0] mt-[29px] relative sm:w-[100%] w-[50%]"
-                onClick={() => navigate("/macbookairthree")}
+                onClick={() => navigate("/ok")}
               >
                 <div className="absolute bg-deep_orange_A700 h-[122px] inset-[0] justify-center m-[auto] w-[98%]"></div>
                 <div className="absolute flex flex-col items-center justify-start left-[0] p-[10px] top-[5%] w-[auto]">
@@ -139,4 +139,4 @@ const MacBookAirTwoPage = () => {
   );
 };
 
-export default MacBookAirTwoPage;
+export default RegistraPage;

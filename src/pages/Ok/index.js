@@ -2,12 +2,12 @@ import React from "react";
 
 import { Text } from "components";
 
-const MacBookAirThreePage = () => {
+const OkPage = () => {
   return (
     <>
       <div className="bg-white_A700 flex flex-col font-inter items-center justify-start mx-[auto] p-[26px] sm:px-[20px] w-[100%]">
         <Text
-          className="mb-[492px] mt-[43px] not-italic text-black_900 text-left"
+          className="font-normal mb-[492px] mt-[43px] not-italic text-black_900 text-left"
           as="h1"
           variant="h1"
         >
@@ -21,4 +21,4 @@ const MacBookAirThreePage = () => {
   );
 };
 
-export default MacBookAirThreePage;
+export default OkPage;
