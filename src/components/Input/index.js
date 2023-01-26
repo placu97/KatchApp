@@ -3,14 +3,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const variants = {
-  FillGray100: "bg-gray_100",
-  Outline: "bg-deep_purple_A100_cc",
+  srcOutlineBluegray300:
+    "bg-white_A700 border border-bluegray_300 border-solid",
 };
-const shapes = {
-  RoundedBorder12: "rounded-radius12",
-  RoundedBorder36: "rounded-radius36",
-};
-const sizes = { sm: "sm:pr-[20px] pr-[23px] py-[23px]" };
+const shapes = { srcRoundedBorder6: "rounded-radius6" };
+const sizes = { smSrc: "pr-[17px] py-[17px]" };
 
 const Input = React.forwardRef(
   (
@@ -63,9 +60,9 @@ Input.propTypes = {
   name: PropTypes.string,
   placeholder: PropTypes.string,
   type: PropTypes.string,
-  shape: PropTypes.oneOf(["RoundedBorder12", "RoundedBorder36"]),
-  variant: PropTypes.oneOf(["FillGray100", "Outline"]),
-  size: PropTypes.oneOf(["sm"]),
+  shape: PropTypes.oneOf(["srcRoundedBorder6"]),
+  variant: PropTypes.oneOf(["srcOutlineBluegray300"]),
+  size: PropTypes.oneOf(["smSrc"]),
 };
 Input.defaultProps = {
   wrapClassName: "",
@@ -73,9 +70,9 @@ Input.defaultProps = {
   name: "",
   placeholder: "",
   type: "text",
-  shape: "RoundedBorder12",
-  variant: "FillGray100",
-  size: "",
+  shape: "srcRoundedBorder6",
+  variant: "srcOutlineBluegray300",
+  size: "smSrc",
 };
 
 export { Input };

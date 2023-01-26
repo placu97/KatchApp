@@ -45,6 +45,11 @@ Button.propTypes = {
   variant: PropTypes.oneOf(["FillGreen500", "FillDeeporangeA700"]),
   size: PropTypes.oneOf(["sm", "md"]),
 };
-Button.defaultProps = { className: "", shape: "", variant: "", size: "" };
+Button.defaultProps = {
+  className: "",
+  shape: "RoundedBorder40",
+  variant: "FillGreen500",
+  size: "sm",
+};
 
 export { Button };

@@ -14,13 +14,7 @@ const Home = () => {
           <Link to="/">Home1</Link>
         </li>
         <li>
-          <Link to="/ok">Ok</Link>
-        </li>
-        <li>
-          <Link to="/registra">Registra</Link>
-        </li>
-        <li>
-          <Link to="/signmodal">Signmodal</Link>
+          <Link to="/audiomusic">AudioMusic</Link>
         </li>
       </ul>
     </div>
