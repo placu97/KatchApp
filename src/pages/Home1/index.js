@@ -11,18 +11,13 @@ const Home1Page = () => {
       <div className="bg-light_green_700 flex flex-col font-inter items-center justify-start mx-[auto] pb-[62px] w-[100%]">
         <div className="bg-gradient  flex sm:flex-col flex-row md:gap-[40px] sm:gap-[40px] items-center justify-between p-[17px] w-[100%]">
           <Text
-            className="bg-clip-text bg-gradient1  font-bold sm:ml-[0] ml-[25px] text-left text-transparent w-[auto]"
+            className="bg-clip-text bg-gradient1  sm:ml-[0] ml-[25px] text-left text-transparent w-[auto]"
             as="h1"
             variant="h1"
           >
             KatchApp
           </Text>
-          <Button
-            className="cursor-pointer font-bold leading-[normal] min-w-[17%] mr-[20px] sm:text-[26px] md:text-[28px] text-[30px] text-center text-white_A700 w-[max-content]"
-            shape="RoundedBorder40"
-            size="sm"
-            variant="FillGreen500"
-          >
+          <Button className="cursor-pointer font-bold leading-[normal] min-w-[17%] mr-[20px] sm:text-[26px] md:text-[28px] text-[30px] text-center text-white_A700 w-[max-content]">
             Accedi
           </Button>
         </div>
@@ -35,7 +30,7 @@ const Home1Page = () => {
         </Text>
         <div className="flex flex-col items-start mt-[96px] px-[111px] sm:px-[20px] md:px-[40px] w-[100%]">
           <Text
-            className="font-normal not-italic text-black_900 text-left"
+            className="not-italic text-black_900 text-left"
             as="h3"
             variant="h3"
           >
@@ -49,7 +44,7 @@ const Home1Page = () => {
         </div>
         <Button
           className="common-pointer cursor-pointer font-semibold leading-[normal] min-w-[30%] mt-[170px] sm:text-[40px] md:text-[46px] text-[50px] text-center text-white_A700 w-[max-content]"
-          onClick={() => navigate("/registra")}
+          onClick={() => navigate("")}
           shape="RoundedBorder52"
           size="md"
           variant="FillDeeporangeA700"
