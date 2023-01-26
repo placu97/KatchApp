@@ -17,8 +17,8 @@ const AudioEditorModal = (props) => {
             <div className="flex flex-col gap-[22px] items-center justify-start pt-[7px] w-[100%]">
               <Text
                 className="not-italic text-bluegray_900 text-left w-[auto]"
-                as="h4"
-                variant="h4"
+                as="h5"
+                variant="h5"
               >
                 Sound Settings
               </Text>
@@ -31,15 +31,14 @@ const AudioEditorModal = (props) => {
                     <div className="flex flex-col gap-[13px] items-start justify-start w-[83%]">
                       <Text
                         className="not-italic text-black_901 text-left w-[auto]"
-                        as="h5"
-                        variant="h5"
+                        as="h6"
+                        variant="h6"
                       >
                         Sounds
                       </Text>
                       <Text
                         className="not-italic text-bluegray_400 text-left w-[auto]"
-                        as="h6"
-                        variant="h6"
+                        variant="body1"
                       >
                         Turn sound on/off according to your preference
                       </Text>
@@ -50,15 +49,14 @@ const AudioEditorModal = (props) => {
                     <div className="flex flex-col gap-[9px] items-start justify-start w-[50%]">
                       <Text
                         className="not-italic text-black_901 text-left w-[auto]"
-                        as="h5"
-                        variant="h5"
+                        as="h6"
+                        variant="h6"
                       >
                         App Sounds
                       </Text>
                       <Text
                         className="not-italic text-bluegray_400 text-left w-[auto]"
-                        as="h6"
-                        variant="h6"
+                        variant="body1"
                       >
                         App sounds for notifications
                       </Text>
@@ -69,15 +67,14 @@ const AudioEditorModal = (props) => {
                     <div className="flex flex-col gap-[9px] items-start justify-start w-[83%]">
                       <Text
                         className="not-italic text-black_901 text-left w-[auto]"
-                        as="h5"
-                        variant="h5"
+                        as="h6"
+                        variant="h6"
                       >
                         App Sounds
                       </Text>
                       <Text
                         className="not-italic text-bluegray_400 text-left w-[auto]"
-                        as="h6"
-                        variant="h6"
+                        variant="body1"
                       >
                         Turn sound on/off according to your preference
                       </Text>

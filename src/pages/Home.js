@@ -13,6 +13,9 @@ const Home = () => {
         <li>
           <Link to="/">Home1</Link>
         </li>
+        <li>
+          <Link to="/audiomusic">AudioMusic</Link>
+        </li>
       </ul>
     </div>
   );
