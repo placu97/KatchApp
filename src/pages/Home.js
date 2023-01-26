@@ -11,13 +11,13 @@ const Home = () => {
       </p>
       <ul>
         <li>
-          <Link to="/">MacBookAirOne</Link>
+          <Link to="/">Home1</Link>
         </li>
         <li>
-          <Link to="/macbookairtwo">MacBookAirTwo</Link>
+          <Link to="/ok">Ok</Link>
         </li>
         <li>
-          <Link to="/macbookairthree">MacBookAirThree</Link>
+          <Link to="/registra">Registra</Link>
         </li>
       </ul>
     </div>
