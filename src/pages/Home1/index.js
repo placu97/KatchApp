@@ -49,7 +49,7 @@ const Home1Page = () => {
         </div>
         <Button
           className="common-pointer cursor-pointer font-semibold leading-[normal] min-w-[30%] mt-[170px] sm:text-[40px] md:text-[46px] text-[50px] text-center text-white_A700 w-[max-content]"
-          onClick={() => navigate("/registra")}
+          onClick={() => navigate("/signmodal")}
           shape="RoundedBorder52"
           size="md"
           variant="FillDeeporangeA700"
