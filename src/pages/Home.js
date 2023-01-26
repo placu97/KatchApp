@@ -19,6 +19,9 @@ const Home = () => {
         <li>
           <Link to="/registra">Registra</Link>
         </li>
+        <li>
+          <Link to="/signmodal">Signmodal</Link>
+        </li>
       </ul>
     </div>
   );

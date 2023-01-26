@@ -8,10 +8,10 @@ const Home1Page = () => {
 
   return (
     <>
-      <div className="bg-light_green_700 flex flex-col font-inter items-center justify-start mx-[auto] pb-[41px] w-[100%]">
+      <div className="bg-light_green_700 flex flex-col font-inter items-center justify-start mx-[auto] pb-[62px] w-[100%]">
         <div className="bg-gradient  flex sm:flex-col flex-row md:gap-[40px] sm:gap-[40px] items-center justify-between p-[17px] w-[100%]">
           <Text
-            className="font-bold sm:ml-[0] ml-[25px] text-black_900 text-left w-[auto]"
+            className="bg-clip-text bg-gradient1  font-bold sm:ml-[0] ml-[25px] text-left text-transparent w-[auto]"
             as="h1"
             variant="h1"
           >
@@ -47,18 +47,15 @@ const Home1Page = () => {
             <br />e sarai pronto ad allenarti con la nostra community !{" "}
           </Text>
         </div>
-        <div
-          className="common-pointer bg-deep_orange_A700 flex flex-col items-center justify-start mt-[149px] p-[25px] md:pl-[20px] sm:pl-[20px] md:pr-[20px] sm:pr-[20px] sm:px-[20px] rounded-radius70 md:w-[100%] sm:w-[100%] w-[30%]"
+        <Button
+          className="common-pointer cursor-pointer font-semibold leading-[normal] min-w-[30%] mt-[170px] sm:text-[40px] md:text-[46px] text-[50px] text-center text-white_A700 w-[max-content]"
           onClick={() => navigate("/registra")}
+          shape="RoundedBorder52"
+          size="md"
+          variant="FillDeeporangeA700"
         >
-          <Text
-            className="font-semibold mb-[18px] mt-[28px] text-left text-white_A700 w-[auto]"
-            as="h1"
-            variant="h1"
-          >
-            Registrati ora
-          </Text>
-        </div>
+          Registrati ora
+        </Button>
       </div>
     </>
   );
