@@ -1,87 +1,108 @@
 import React from "react";
 import ModalProvider from "react-modal";
 
-import { Text, List, Switch } from "components";
+import { Text, Button, Img, Line, Input } from "components";
 
 const AudioEditorModal = (props) => {
   return (
     <>
       <ModalProvider
         appElement={document.getElementById("root")}
-        className="m-[auto] !w-[30%]"
+        className="m-[auto] !w-[31%]"
         overlayClassName="bg-black_900_b2 fixed flex h-[100%] inset-y-[0] w-[100%]"
         {...props}
       >
         <div className="max-h-[97vh] overflow-y-auto">
-          <div className="bg-white_A700 flex flex-col items-center justify-start p-[24px] md:pl-[20px] sm:pl-[20px] md:pr-[20px] sm:pr-[20px] sm:px-[20px] rounded-radius8 w-[100%]">
-            <div className="flex flex-col gap-[22px] items-center justify-start pt-[7px] w-[100%]">
+          <div className="bg-white_A700 flex flex-col items-center justify-end mt-[240px] p-[17px] md:pl-[20px] sm:pl-[20px] md:pr-[20px] sm:pr-[20px] rounded-radius8 w-[100%]">
+            <div className="flex flex-col items-center justify-start mt-[7px] pb-[2px] pl-[2px] md:w-[100%] sm:w-[100%] w-[97%]">
               <Text
-                className="not-italic text-bluegray_900 text-left w-[auto]"
-                as="h5"
-                variant="h5"
+                className="font-medium text-bluegray_900 text-left w-[auto]"
+                as="h3"
+                variant="h3"
               >
-                Sound Settings
+                Crea Account
               </Text>
-              <div className="flex flex-col items-center justify-start w-[100%]">
-                <List
-                  className="flex-col gap-[22px] grid items-center w-[100%]"
-                  orientation="vertical"
+              <Text
+                className="mt-[16px] sm:mx-[0] mx-[auto] not-italic text-bluegray_400 text-center w-[100%]"
+                as="h4"
+                variant="h4"
+              >
+                <span className="text-bluegray_400 text-[16px] font-inter font-normal">
+                  Selezionando accedi confermi di accettare le nostre
+                  Condizioni. Scopri come elaboriamo i tuoi dati nella nostra{" "}
+                </span>
+                <a
+                  href="javascript:"
+                  className="text-blue_900 text-[16px] font-inter font-normal underline"
                 >
-                  <div className="flex flex-row items-center justify-between my-[0] w-[100%]">
-                    <div className="flex flex-col gap-[13px] items-start justify-start w-[83%]">
-                      <Text
-                        className="not-italic text-black_901 text-left w-[auto]"
-                        as="h6"
-                        variant="h6"
-                      >
-                        Sounds
-                      </Text>
-                      <Text
-                        className="not-italic text-bluegray_400 text-left w-[auto]"
-                        variant="body1"
-                      >
-                        Turn sound on/off according to your preference
-                      </Text>
-                    </div>
-                    <Switch value={true} className="w-[12%]" />
+                  Informativa sulla Privacy
+                </a>
+                <span className="text-bluegray_400 text-[16px] font-inter font-normal">
+                  {" "}
+                  e{" "}
+                </span>
+                <a
+                  href="javascript:"
+                  className="text-blue_900 text-[16px] font-inter font-normal underline"
+                >
+                  Informativa sui Cookie
+                </a>
+              </Text>
+              <div className="flex flex-col font-plusjakartasans items-center justify-start mb-[14px] mt-[37px] md:w-[100%] sm:w-[100%] w-[86%]">
+                <Button
+                  className="flex items-center justify-center text-center w-[100%]"
+                  leftIcon={
+                    <Img
+                      src="images/img_google.svg"
+                      className="mr-[12px] text-center"
+                      alt="google"
+                    />
+                  }
+                  size="sm"
+                  variant="OutlineBlack900"
+                >
+                  <div className="bg-transparent cursor-pointer font-semibold text-[20px] text-gray_900 text-left tracking-ls007999999821186066 md:tracking-ls1 sm:tracking-ls1 w-[100%]">
+                    Continua con Google
                   </div>
-                  <div className="flex flex-row items-center justify-between my-[0] w-[100%]">
-                    <div className="flex flex-col gap-[9px] items-start justify-start w-[50%]">
-                      <Text
-                        className="not-italic text-black_901 text-left w-[auto]"
-                        as="h6"
-                        variant="h6"
-                      >
-                        App Sounds
-                      </Text>
-                      <Text
-                        className="not-italic text-bluegray_400 text-left w-[auto]"
-                        variant="body1"
-                      >
-                        App sounds for notifications
-                      </Text>
-                    </div>
-                    <Switch value={true} className="w-[12%]" />
+                </Button>
+                <div className="flex flex-row items-center justify-between mt-[17px] md:w-[100%] sm:w-[100%] w-[80%]">
+                  <Line className="bg-indigo_51 h-[1px] my-[9px] w-[24%]" />
+                  <Text
+                    className="font-semibold mt-[5px] text-bluegray_300 text-left tracking-ls007000000029802322 md:tracking-ls1 sm:tracking-ls1 w-[auto]"
+                    as="h5"
+                    variant="h5"
+                  >
+                    oppure
+                  </Text>
+                  <Line className="bg-indigo_51 h-[1px] my-[9px] w-[24%]" />
+                </div>
+                <div className="flex flex-col gap-[8px] items-start justify-start mt-[13px] pb-[6px] w-[100%]">
+                  <div className="flex flex-col h-[22px] md:h-[auto] sm:h-[auto] items-start justify-start w-[auto]">
+                    <Text
+                      className="font-medium text-bluegray_901 text-left tracking-ls007000000029802322 md:tracking-ls1 sm:tracking-ls1 w-[auto]"
+                      as="h5"
+                      variant="h5"
+                    >
+                      Email
+                    </Text>
                   </div>
-                  <div className="flex flex-row items-center justify-between my-[0] w-[100%]">
-                    <div className="flex flex-col gap-[9px] items-start justify-start w-[83%]">
-                      <Text
-                        className="not-italic text-black_901 text-left w-[auto]"
-                        as="h6"
-                        variant="h6"
-                      >
-                        App Sounds
-                      </Text>
-                      <Text
-                        className="not-italic text-bluegray_400 text-left w-[auto]"
-                        variant="body1"
-                      >
-                        Turn sound on/off according to your preference
-                      </Text>
-                    </div>
-                    <Switch value={false} className="w-[12%]" />
-                  </div>
-                </List>
+                  <Input
+                    className="font-medium p-[0] text-[16px] placeholder:text-bluegray_401 text-bluegray_401 text-left tracking-ls007999999821186066 md:tracking-ls1 sm:tracking-ls1 w-[100%]"
+                    wrapClassName="w-[100%]"
+                    type="email"
+                    name="FrameOne"
+                    placeholder="Inserisci il tuo indirizzo Email"
+                  ></Input>
+                </div>
+                <div className="flex flex-col items-center justify-start mt-[22px] py-[2px] w-[100%]">
+                  <Button
+                    className="cursor-pointer font-semibold text-[16px] text-center text-gray_50 tracking-ls007999999821186066 md:tracking-ls1 sm:tracking-ls1 w-[327px]"
+                    size="md"
+                    variant="FillGray900"
+                  >
+                    Continua con Email
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
