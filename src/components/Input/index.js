@@ -3,14 +3,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const variants = {
-  FillGray100: "bg-gray_100",
-  Outline: "bg-deep_purple_A100_cc",
+  OutlineIndigo51: "bg-white_A700 border border-indigo_51 border-solid",
 };
-const shapes = {
-  RoundedBorder12: "rounded-radius12",
-  RoundedBorder36: "rounded-radius36",
-};
-const sizes = { sm: "sm:pr-[20px] pr-[23px] py-[23px]" };
+const shapes = { RoundedBorder24: "rounded-radius24" };
+const sizes = { sm: "pb-[16px] pt-[19px] px-[16px]" };
 
 const Input = React.forwardRef(
   (
@@ -63,8 +59,8 @@ Input.propTypes = {
   name: PropTypes.string,
   placeholder: PropTypes.string,
   type: PropTypes.string,
-  shape: PropTypes.oneOf(["RoundedBorder12", "RoundedBorder36"]),
-  variant: PropTypes.oneOf(["FillGray100", "Outline"]),
+  shape: PropTypes.oneOf(["RoundedBorder24"]),
+  variant: PropTypes.oneOf(["OutlineIndigo51"]),
   size: PropTypes.oneOf(["sm"]),
 };
 Input.defaultProps = {
@@ -73,9 +69,9 @@ Input.defaultProps = {
   name: "",
   placeholder: "",
   type: "text",
-  shape: "RoundedBorder12",
-  variant: "FillGray100",
-  size: "",
+  shape: "RoundedBorder24",
+  variant: "OutlineIndigo51",
+  size: "sm",
 };
 
 export { Input };

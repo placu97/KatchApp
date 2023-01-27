@@ -1,8 +1,10 @@
 import React from "react";
 const variantClasses = {
-  h1: "sm:text-[40px] md:text-[46px] text-[50px]",
+  h1: "font-bold sm:text-[40px] md:text-[46px] text-[50px]",
   h2: "font-semibold sm:text-[36px] md:text-[38px] text-[40px]",
   h3: "sm:text-[26px] md:text-[28px] text-[30px]",
+  h4: "font-normal text-[16px]",
+  h5: "text-[14px]",
 };
 const Text = ({ children, className, variant, as, ...restProps }) => {
   const Component = as || "span";
